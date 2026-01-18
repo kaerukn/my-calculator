@@ -36,7 +36,7 @@ function playBirthdaySurprise() {
     display.value = "🎉 Happy Birthday! 🎉";
 
     // LOCAL IMAGE FILE
-    birthdayImage.src = "Screenshot 2026-01-16 212435 - Copy.png";
+    birthdayImage.src = "haooybday.jpng";
     birthdayImage.style.display = "block";
 
     // LOCAL AUDIO FILE
@@ -71,3 +71,4 @@ function calculate() {
         hideBirthday();
     }
 }
+
