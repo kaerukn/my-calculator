@@ -36,7 +36,7 @@ function playBirthdaySurprise() {
     display.value = "🎉 Happy Birthday! 🎉";
 
     // LOCAL IMAGE FILE
-    birthdayImage.src = "haooybday.jpng";
+    birthdayImage.src = "happybday.jpg";
     birthdayImage.style.display = "block";
 
     // LOCAL AUDIO FILE
@@ -71,4 +71,5 @@ function calculate() {
         hideBirthday();
     }
 }
+
 
