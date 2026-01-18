@@ -40,7 +40,7 @@ function playBirthdaySurprise() {
     birthdayImage.style.display = "block";
 
     // LOCAL AUDIO FILE
-    birthdayAudio.src = "HAPPY Birthday Song, Happy Birthday to You - Happy Birthday Song with Names.mp3";
+    birthdayAudio.src = "happybday.mp3";
     birthdayAudio.play();
 
     showingMessage = true;
@@ -71,5 +71,6 @@ function calculate() {
         hideBirthday();
     }
 }
+
 
 
