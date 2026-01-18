@@ -49,19 +49,14 @@ function playBirthdaySurprise() {
 function calculate() {
     try {
         const expression = display.value.replace(/\s/g, "");
+        let result = eval(expression);
 
-        const specialActions = {
-            "6+9": showMissYou,
-            "9+6": showMissYou,
-            "18+1": playBirthdaySurprise,
-            "1+18": playBirthdaySurprise,
-            "19": playBirthdaySurprise
-        };
-
-        if (specialActions[expression]) {
-            specialActions[expression]();
+        if (expression === "6+9" || expression === "9+6") {
+            showMissYou();
+        } else if (result === 19) { // ANY calculation that equals 19
+            playBirthdaySurprise();
         } else {
-            display.value = eval(expression);
+            display.value = result; // normal calculation
             hideBirthday();
             showingMessage = false;
         }
@@ -71,6 +66,7 @@ function calculate() {
         hideBirthday();
     }
 }
+
 
 
 
