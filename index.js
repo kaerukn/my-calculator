@@ -53,7 +53,7 @@ function calculate() {
 
         if (expression === "6+9" || expression === "9+6") {
             showMissYou();
-        } else if (result === 19) { // ANY calculation that equals 19
+        } else if (Number(result) === 19) { // ANY calculation that equals 19
             playBirthdaySurprise();
         } else {
             display.value = result; // normal calculation
@@ -66,6 +66,7 @@ function calculate() {
         hideBirthday();
     }
 }
+
 
 
 
