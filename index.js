@@ -35,11 +35,9 @@ function showMissYou() {
 function playBirthdaySurprise() {
     display.value = "🎉 Happy Birthday! 🎉";
 
-    // LOCAL IMAGE FILE
     birthdayImage.src = "happybday.jpg";
     birthdayImage.style.display = "block";
 
-    // LOCAL AUDIO FILE
     birthdayAudio.src = "happybday.mp3";
     birthdayAudio.play();
 
@@ -53,7 +51,7 @@ function calculate() {
 
         if (expression === "6+9" || expression === "9+6") {
             showMissYou();
-        } else if (Number(result) === 19 || Number(result) === 26 { 
+        } else if (Number(result) === 19 || Number(result) === 26) { 
             playBirthdaySurprise();
         } else {
             display.value = result; 
@@ -66,4 +64,3 @@ function calculate() {
         hideBirthday();
     }
 }
-
